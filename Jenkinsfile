@@ -28,7 +28,7 @@ pipeline {
  
                     docker run -d \
                     --restart unless-stopped \
-                    -p 80:80 \
+                    -p 8081:80 \
                     --name techcloud-app \
                     techcloud-website:${BUILD_NUMBER}
                 '''
